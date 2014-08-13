@@ -1,0 +1,30 @@
+<template name="dashboard">
+	<div class="row">
+		<div class="container">
+			{{> reactiveTable collection=users settings=tableSettings}}
+			
+			<div style="margin-top: 115px;" class="">
+				<div class="alert alert-danger hide" role="alert"></div>
+				<form class="form-inline register col-md-offset-2" role="form">
+					  <div class="form-group">
+					    <label class="sr-only" for="username">Username</label>
+					    <input type="text" class="form-control" id="username" placeholder="Enter username" required autofocus>
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="password">Password</label>
+					    <input type="password" class="form-control" id="password" placeholder="Password" required>
+					  </div>
+					  <div class="form-group">
+					    <label class="sr-only" for="user-type">User Type</label>
+					    <select id="user-type" class="form-control" required>
+					    	<option></option>
+					    	<option value="administrator">Administrator</option>
+					    	<option value="guest">Guest</option>
+					    </select>
+					  </div>
+					  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>

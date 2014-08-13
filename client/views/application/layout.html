@@ -1,0 +1,11 @@
+<template name="layout">
+	{{> yield region='header'}}
+	<div class="clearfix"></div>
+	<div class="page-container">
+		<div class="page-content-wrapper">
+			<div class="page-content">
+				{{> yield}}
+			</div>
+		</div>
+	</div>
+</template>

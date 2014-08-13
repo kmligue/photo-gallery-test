@@ -1,0 +1,10 @@
+{
+  "packages": {
+    "iron-router": {},
+    "iron-router-progress": {},
+    "reactive-table": {},
+    "collectionFS": {},
+    "fancybox": {},
+    "bootstrap-3": {}
+  }
+}
